@@ -1,0 +1,33 @@
+Dataset : https://www.kaggle.com/datasets/faresashraf1001/supermarket-sales/data
+
+Deskripsi:
+Data mentah supermarket sales diimpor ke PostgreSQL tanpa modifikasi menggunakan Python notebook dan library psycopg2.
+
+DDL (Data Definition Language):
+CREATE TABLE IF NOT EXISTS table_m3 (
+    "Invoice ID" VARCHAR(20),
+    "Branch" VARCHAR(10),
+    "City" VARCHAR(30),
+    "Customer type" VARCHAR(20),
+    "Gender" VARCHAR(10),
+    "Product line" VARCHAR(50),
+    "Unit price" NUMERIC(10,2),
+    "Quantity" INTEGER,
+    "Tax 5%" NUMERIC(12,2),
+    "Sales" NUMERIC(12,2),
+    "Date" DATE,
+    "Time" TIME,
+    "Payment" VARCHAR(20),
+    "cogs" NUMERIC(12,2),
+    "gross margin percentage" NUMERIC(8,2),
+    "gross income" NUMERIC(12,2),
+    "Rating" NUMERIC(5,2)
+);
+
+DML (Data Manipulation Language):
+Data diimpor menggunakan perintah COPY dari file CSV ke tabel table_m3 di PostgreSQL melalui Python notebook (P2M3_hafiz_alfariz_import_csv_to_postgres.ipynb) dengan library psycopg2.
+
+Proses:
+- Tabel dibuat sesuai struktur data mentah.
+- Data diimpor apa adanya, tanpa perubahan format atau isi.
+- Tools: Python (pandas, psycopg2), PostgreSQL (Docker), file CSV: P2M3_hafiz_alfariz_data_raw.csv, notebook: P2M3_hafiz_alfariz_import_csv_to_postgres.ipynb.
