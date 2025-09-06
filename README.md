@@ -43,4 +43,9 @@ Metode yang digunakan meliputi:
 - [Another example](https://github.com/sanggusti/final_bangkit)
 - [Additional reference](https://www.freecodecamp.org/news/how-to-write-a-good-readme-file/)
 ![Kibana HomePage](images/OverAll.png)
+
+## Contact
+
+
+For questions or collaboration, please contact Hafiz Alfariz via [LinkedIn](https://www.linkedin.com/in/hafizalfariz/) or GitHub.
 ---
